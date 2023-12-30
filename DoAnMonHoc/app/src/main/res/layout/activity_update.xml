@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <ImageView
+        android:id="@+id/imgHinhDaiDien"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        tools:srcCompat="@tools:sample/avatars"
+        />
+    <Button
+        android:id="@+id/btnChupHinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chụp Hình"
+        android:layout_below="@id/btnChonHinh"
+        android:layout_alignLeft="@id/btnChonHinh"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnChonHinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/imgHinhDaiDien"
+        android:text="Chọn Hình" />
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/imgHinhDaiDien"/>
+
+    <EditText
+        android:id="@+id/edtGia"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/edtTen" />
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/edtGia"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:layout_toRightOf="@id/btnLuu"
+        android:layout_alignBaseline="@id/btnLuu"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+</RelativeLayout>
